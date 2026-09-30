@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1] - Documentation Update
+
+- Added a beginner-friendly Windows and USB usage guide.
+- Added first-time vault creation instructions.
+- Added existing-vault usage instructions.
+- Added USB removal and safe-eject guidance.
+- No application behavior or encryption implementation changed.
+
 ## [1.0.0] - Initial Public Release
 
 First public open-source release of PAULT.

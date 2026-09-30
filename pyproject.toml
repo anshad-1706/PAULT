@@ -1,6 +1,6 @@
 [project]
 name = "pault"
-version = "1.0.0"
+version = "1.0.1"
 description = "PAULT is a portable offline encrypted vault for protecting personal files on removable storage."
 license = "GPL-3.0-or-later"
 requires-python = ">=3.11"

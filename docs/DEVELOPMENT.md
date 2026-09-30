@@ -35,7 +35,7 @@ scripts\build_windows.ps1
 
 The script installs the `portable-build` extra and runs PyInstaller in **one-folder** mode. Qt, the Python runtime, Argon2 native support, and cryptography dependencies are bundled in `dist\PAULT\` (including PyInstaller's support subdirectory). No target-machine Python installation or project checkout is needed. The build is Windows-specific; build it on Windows.
 
-To produce the GitHub release archive from the completed build, run `python scripts\package_release.py`. It packages only `dist\PAULT\` as `dist\PAULT-v1.0.0-windows-x64.zip`, checks for a vault in the release Vaults folder, and verifies the expected executable, support directory, and logo entries.
+To produce the GitHub release archive from the completed build, run `python scripts\package_release.py`. It packages only `dist\PAULT\` as `dist\PAULT-v<project-version>-windows-x64.zip` (currently `dist\PAULT-v1.0.1-windows-x64.zip`), checks for a vault in the release Vaults folder, and verifies the expected executable, support directory, and logo entries.
 
 The UI loads the included official logo from `pault_desktop\assets\pault_logo.png` using a source/frozen-aware resource resolver. The build script bundles the byte-identical PNG and derives a Windows `.ico` for the executable.
 

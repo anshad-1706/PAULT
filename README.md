@@ -18,6 +18,17 @@ USB drive
 	-> Vault data remains encrypted on storage
 ```
 
+## How to Use PAULT
+
+1. Download `PAULT-v1.0.0-windows-x64.zip` from the [official PAULT GitHub Releases](https://github.com/anshad-1706/PAULT/releases) and extract it.
+2. Copy the complete `PAULT` folder to a USB drive. Keep `PAULT.exe`, `_internal`, and `Vaults` together.
+3. Open the folder on the USB and double-click `PAULT.exe`. The Windows x64 portable app does not need a traditional installation.
+4. Choose **Create New Vault**, select a location and name, then choose **Create Vault**. Or choose **Open Existing Vault** and select your `.pault` vault folder.
+5. Set a strong password, add files with **+ Add Files** or drag and drop, and organize them with **+ New Folder**.
+6. Choose **Lock Vault** when finished, close PAULT, then use Windows **Safely Remove Hardware / Eject** before disconnecting the USB.
+
+The USB drive letter can differ between computers. Vaults may be stored on the USB or another accessible location. PAULT cannot recover a forgotten vault password. Imported originals remain unchanged, while exports outside PAULT are no longer protected by the vault. See the [complete beginner-friendly User Guide](docs/USER_GUIDE.md) for details, existing-vault use, safe removal, and export instructions.
+
 ## Features
 
 - Portable Windows one-folder application; the complete folder runs without a Python installation on the target computer.
@@ -44,7 +55,7 @@ For implementation details and limitations, see [docs/SECURITY.md](docs/SECURITY
 
 ## Portable Windows Setup
 
-1. Download the official `PAULT-v1.0.0-windows-x64.zip` from this project's GitHub Releases after the repository URL is configured.
+1. Download the official `PAULT-v1.0.0-windows-x64.zip` from this project's GitHub Releases.
 2. Extract the ZIP.
 3. Copy the complete `PAULT` folder to a USB drive.
 4. Run `PAULT.exe` from that folder.
@@ -78,7 +89,7 @@ scripts\build_windows.ps1
 python scripts\package_release.py
 ```
 
-The build is written to `dist\PAULT\`; the release packager produces `dist\PAULT-v1.0.0-windows-x64.zip` from that built folder only. See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for details.
+The build is written to `dist\PAULT\`; the release packager produces `dist\PAULT-v1.0.1-windows-x64.zip` from that built folder only. See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for details.
 
 ## Attribution, License, and Branding
 
@@ -90,4 +101,4 @@ The canonical logo is [pault_desktop/assets/pault_logo.png](pault_desktop/assets
 
 ## Security Reporting
 
-Do not report suspected vulnerabilities in a public issue. A private security contact must be configured before public release; see [SECURITY.md](SECURITY.md). Do not include passwords, keys, vault data, or plaintext personal files in reports.
+Report suspected vulnerabilities privately using GitHub's private vulnerability reporting for this repository; do not use public issues. See [SECURITY.md](SECURITY.md). Do not include passwords, keys, vault data, or plaintext personal files in reports.

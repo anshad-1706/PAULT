@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use PAULT in research or other work, please cite this software."
 title: "PAULT"
-version: "1.0.0"
+version: "1.0.1"
 abstract: "PAULT is a portable offline encrypted vault for protecting personal files on removable storage."
 authors:
   - family-names: "H."
