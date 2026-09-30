@@ -1,0 +1,58 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+pault.ini
+.DS_Store
+venv/
+.tox/
+.nox/
+ENV/
+
+# Local IDE and operating-system state
+.vscode/
+.idea/
+.fleet/
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
+
+# Credentials and private key material
+.env
+.env.*
+!.env.example
+.pypirc
+.netrc
+credentials.*
+secrets.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+id_rsa
+id_ed25519
+
+# Local databases, logs, and decrypted output
+*.sqlite
+*.sqlite3
+*.db
+*.log
+logs/
+Recovered PAULTs/
+pault-video-*
+
+# Vaults and encrypted vault objects are user data, never source fixtures
+*.pault
+*.pault/
+*.paultobj
+vault.json
+My Private Vault.pault/

@@ -1,0 +1,36 @@
+[project]
+name = "pault"
+version = "1.0.0"
+description = "PAULT is a portable offline encrypted vault for protecting personal files on removable storage."
+license = "GPL-3.0-or-later"
+requires-python = ">=3.11"
+classifiers = [
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+  "argon2-cffi>=23.1.0",
+  "cryptography>=42.0.0",
+  "PySide6>=6.7.0",
+]
+
+[project.optional-dependencies]
+portable-build = ["pyinstaller>=6.10,<7", "pillow>=10"]
+
+[project.scripts]
+pault = "pault_desktop.app:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["pault_core*", "pault_desktop*"]
+
+[tool.setuptools.package-data]
+pault_desktop = ["assets/pault_logo.png"]

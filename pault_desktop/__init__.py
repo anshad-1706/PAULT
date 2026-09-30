@@ -1,0 +1,1 @@
+"""PAULT desktop application package."""
